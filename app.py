@@ -8,7 +8,15 @@ def home():
     """
     Home template
     """
-    return render_template("base.html")
+    return render_template("home.html")
+
+
+@app.route('/email')
+def email():
+    """
+    Email page for 
+    """
+    return render_template("email.html")
 
 
 app.run(debug=True)
