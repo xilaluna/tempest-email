@@ -19,4 +19,12 @@ def email():
     return render_template("email.html")
 
 
+@app.route('/login')
+def login():
+    """
+    Login page
+    """
+    return render_template("auth/login.html")
+
+
 app.run(debug=True)
